@@ -1,9 +1,6 @@
 package com.lambdaschool.foundation;
 
-import com.lambdaschool.foundation.models.Role;
-import com.lambdaschool.foundation.models.User;
-import com.lambdaschool.foundation.models.UserRoles;
-import com.lambdaschool.foundation.models.Useremail;
+import com.lambdaschool.foundation.models.*;
 import com.lambdaschool.foundation.services.RoleService;
 import com.lambdaschool.foundation.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

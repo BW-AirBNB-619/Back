@@ -70,14 +70,14 @@ public class UserController
      * @return JSON object of the user you seek
      * @see UserService#findUserById(long) UserService.findUserById(long)
      */
-    @ApiOperation(value = "Retrieve a user based of off user id",
-            response = User.class)
-    @ApiResponses(value = {@ApiResponse(code = 200,
-            message = "User Found",
-            response = User.class), @ApiResponse(code = 404,
-            message = "User Not Found",
-            response = ErrorDetail.class)})
-    @PreAuthorize("hasAnyRole('ADMIN')")
+//    @ApiOperation(value = "Retrieve a user based of off user id",
+//            response = User.class)
+//    @ApiResponses(value = {@ApiResponse(code = 200,
+//            message = "User Found",
+//            response = User.class), @ApiResponse(code = 404,
+//            message = "User Not Found",
+//            response = ErrorDetail.class)})
+
     @GetMapping(value = "/user/{userId}",
             produces = {"application/json"})
     public ResponseEntity<?> getUserById(
@@ -190,6 +190,8 @@ public class UserController
                                     responseHeaders,
                                     HttpStatus.CREATED);
     }
+
+
 
     /**
      * Given a complete User Object

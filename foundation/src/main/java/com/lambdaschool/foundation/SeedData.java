@@ -3,10 +3,7 @@ package com.lambdaschool.foundation;
 import com.github.javafaker.Faker;
 import com.github.javafaker.service.FakeValuesService;
 import com.github.javafaker.service.RandomService;
-import com.lambdaschool.foundation.models.Role;
-import com.lambdaschool.foundation.models.User;
-import com.lambdaschool.foundation.models.UserRoles;
-import com.lambdaschool.foundation.models.Useremail;
+import com.lambdaschool.foundation.models.*;
 import com.lambdaschool.foundation.services.RoleService;
 import com.lambdaschool.foundation.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +11,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Locale;
 
@@ -65,22 +63,29 @@ public class SeedData
 
         // admin, data, user
         ArrayList<UserRoles> admins = new ArrayList<>();
+
         admins.add(new UserRoles(new User(),
                                  r1));
         admins.add(new UserRoles(new User(),
                                  r2));
         admins.add(new UserRoles(new User(),
                                  r3));
+
         User u1 = new User("admin",
                            "password",
                            "admin@lambdaschool.local",
                            admins);
+
         u1.getUseremails()
                 .add(new Useremail(u1,
-                                   "admin@email.local"));
+                        "admin@email.local"));
         u1.getUseremails()
                 .add(new Useremail(u1,
-                                   "admin@mymail.local"));
+                        "admin@mymail.local"));
+
+       u1.getUserprops().add(new UserProperty("Sexy House", 5, "a Good one", "master??", 4, 20, 2, u1));
+
+
 
         userService.save(u1);
 
@@ -103,6 +108,8 @@ public class SeedData
         u2.getUseremails()
                 .add(new Useremail(u2,
                                    "bunny@email.local"));
+        u2.getUserprops().add(new UserProperty("Sexy House", 5, "a Good one", "master??", 4, 20, 2, u2));
+
         userService.save(u2);
 
         // user
@@ -136,9 +143,9 @@ public class SeedData
                            users);
         userService.save(u5);
 
-        // using JavaFaker create a bunch of regular users
-        // https://www.baeldung.com/java-faker
-        // https://www.baeldung.com/regular-expressions-java
+//         using JavaFaker create a bunch of regular users
+//         https://www.baeldung.com/java-faker
+//         https://www.baeldung.com/regular-expressions-java
 
         FakeValuesService fakeValuesService = new FakeValuesService(new Locale("en-US"),
                                                                     new RandomService());
