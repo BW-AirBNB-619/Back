@@ -4,6 +4,7 @@ Authenticating with OAUTH2 is similar to JWT as both return a token upon success
 Existing users admin/password, cinnamon/1234567
 
 Example login Request:
+```
 axios.post('https://medcabinetjune2020.herokuapp.com/login', 
     `grant_type=password&username=${this.state.username}&password=${this.state.password}`, 
     {
@@ -14,3 +15,4 @@ axios.post('https://medcabinetjune2020.herokuapp.com/login',
         }
     }
 )
+```
