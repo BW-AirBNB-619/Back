@@ -18,16 +18,31 @@ axios.post('/login',
 ```
 .POST to  https://ww-foundation.herokuapp.com/properties/user/{userid}/property
 
-expects
+expects a full object
+
+example
 ```
 {
-"name": "",
-"bedrooms": 0,
-"neighbourhood": "",
-"roomtype": "",
-"minimumnights": 0,
-"numberofreviews": 0,
-"price": 0
-   }
+
+    "name": "",
+    "bedrooms": 0,
+    "neighbourhood": "",
+    "roomtype": "",
+    "minimumnights": 0,
+    "numberofreviews": 0,
+    "price": 0
+    
+}
 ```
+
+.UPDATE to https://ww-foundation.herokuapp.com/properties/property/{propid}
+
+can send a single property
+
+example
+```
+"name": "newname"
+
+```
+
 
