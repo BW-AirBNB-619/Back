@@ -5,7 +5,7 @@ Existing users admin/password, cinnamon/1234567
 
 Example login Request:
 ```
-axios.post('https://medcabinetjune2020.herokuapp.com/login', 
+axios.post('/login', 
     `grant_type=password&username=${this.state.username}&password=${this.state.password}`, 
     {
         headers: {
@@ -16,3 +16,18 @@ axios.post('https://medcabinetjune2020.herokuapp.com/login',
     }
 )
 ```
+.POST to  https://ww-foundation.herokuapp.com/properties/user/{userid}/property
+
+expects
+```
+{
+"name": "",
+"bedrooms": 0,
+"neighbourhood": "",
+"roomtype": "",
+"minimumnights": 0,
+"numberofreviews": 0,
+"price": 0
+   }
+```
+
