@@ -45,4 +45,6 @@ example
 
 ```
 
+.DELETE to https://ww-foundation.herokuapp.com/properties/property/{id}
+
 
