@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0acf45d-2d8a-4588-b22b-c36da34000af" name="Default Changelist" comment="" />
+    <list default="true" id="c0acf45d-2d8a-4588-b22b-c36da34000af" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foundation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/foundation/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foundation/src/main/java/com/lambdaschool/foundation/config/DataSourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/foundation/src/main/java/com/lambdaschool/foundation/config/DataSourceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foundation/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/foundation/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +14,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1ddfueYw839gUg6mwTJtj9iSJHc" />
   <component name="ProjectViewState">
@@ -33,6 +39,8 @@
       <option name="presentableId" value="Default" />
       <updated>1592760114243</updated>
       <workItem from="1592760115506" duration="2345000" />
+      <workItem from="1593032288834" duration="989000" />
+      <workItem from="1593090219459" duration="497000" />
     </task>
     <servers />
   </component>
@@ -40,9 +48,14 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1060" y="460" key="FileChooserDialogImpl" timestamp="1592768326708">
+    <state x="1060" y="460" key="FileChooserDialogImpl" timestamp="1593090715166">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="1060" y="460" key="FileChooserDialogImpl/0.0.2560.1410/2560.360.1920.1080@0.0.2560.1410" timestamp="1592768326708" />
+    <state x="1060" y="460" key="FileChooserDialogImpl/0.0.2560.1410@0.0.2560.1410" timestamp="1593090715166" />
+    <state x="1089" y="619" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593032333203">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="1089" y="619" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1410/2560.360.1920.1080@0.0.2560.1410" timestamp="1593032333203" />
   </component>
 </project>
