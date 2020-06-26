@@ -31,12 +31,12 @@ axios.post('https://ww-foundation.herokuapp.com/createnewuser/login',
 )
 ```
 # ALL PROPERTY ENDPOINTS
+
+
+#.post
 ```
-#post to  https://ww-foundation.herokuapp.com/properties/user/{userid}/property
-
+https://ww-foundation.herokuapp.com/properties/user/{userid}/property
 expects a full object
-
-
 {
 
     "name": "",
@@ -49,14 +49,18 @@ expects a full object
 }
 ```
 
-.UPDATE to https://ww-foundation.herokuapp.com/properties/property/{propid}
-can send a single property
-example
+#.UPDATE
 ```
+https://ww-foundation.herokuapp.com/properties/property/{propid}
+expects any existing property
+
 "name": "newname"
 
 ```
-.DELETE to https://ww-foundation.herokuapp.com/properties/property/{id}
 
+#.DELETE
+``` do i need to explain
+https://ww-foundation.herokuapp.com/properties/property/{id}
+```
 
 
