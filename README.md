@@ -32,6 +32,18 @@ axios.post('https://ww-foundation.herokuapp.com/createnewuser/login',
 ```
 # ALL PROPERTY ENDPOINTS
 
+# .GET all
+```
+https://ww-foundation.herokuapp.com/properties/properties
+returns all props, restricted by admins
+```
+
+# .GET by id
+```
+https://ww-foundation.herokuapp.com/properties/property/{id} ONLY PROPERTY 7 AND 12 EXIST BY DEFAULT UNLESS ADDED BY YOU
+returns specefic property, you can only see your property unless admin 
+```
+
 
 # .POST
 ```
@@ -49,12 +61,31 @@ expects a full object
 }
 ```
 
-# .UPDATE
+# .PATCH
 ```
 https://ww-foundation.herokuapp.com/properties/property/{propid}
 expects any existing property
 
 "name": "newname"
+
+```
+
+
+# .PUT
+
+```
+https://ww-foundation.herokuapp.com/properties/property/{id}
+expects a full object and will replace currently existing object at the given id
+{
+
+    "name": "",
+    "bedrooms": 0,
+    "neighbourhood": "",
+    "roomtype": "",
+    "minimumnights": 0,
+    "numberofreviews": 0,
+    "price": 0
+}
 
 ```
 
