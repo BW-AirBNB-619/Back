@@ -3,6 +3,21 @@ Authenticating with OAUTH2 is similar to JWT as both return a token upon success
 
 Existing users admin/password, cinnamon/1234567
 
+# to create user
+
+.post to https://ww-foundation.herokuapp.com/createnewuser
+```
+expects a username password and email,
+
+example
+{
+"username": "bob",
+"password": "123",
+"email": "bob@bob.com"
+}
+
+```
+
 Example login Request:
 ```
 axios.post('/login', 
@@ -16,10 +31,10 @@ axios.post('/login',
     }
 )
 ```
+# ALL PROPERTY ENDPOINTS
 .POST to  https://ww-foundation.herokuapp.com/properties/user/{userid}/property
 
 expects a full object
-
 example
 ```
 {
@@ -31,18 +46,17 @@ example
     "minimumnights": 0,
     "numberofreviews": 0,
     "price": 0
-    
 }
 ```
 
 .UPDATE to https://ww-foundation.herokuapp.com/properties/property/{propid}
-
 can send a single property
-
 example
 ```
 "name": "newname"
 
 ```
-
 .DELETE to https://ww-foundation.herokuapp.com/properties/property/{id}
+
+
+
