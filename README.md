@@ -9,7 +9,6 @@ Existing users admin/password, cinnamon/1234567
 ```
 expects a username password and email,
 
-example
 {
 "username": "bob",
 "password": "123",
@@ -20,7 +19,7 @@ example
 
 Example login Request:
 ```
-axios.post('/login', 
+axios.post('https://ww-foundation.herokuapp.com/createnewuser/login', 
     `grant_type=password&username=${this.state.username}&password=${this.state.password}`, 
     {
         headers: {
@@ -32,11 +31,12 @@ axios.post('/login',
 )
 ```
 # ALL PROPERTY ENDPOINTS
-.POST to  https://ww-foundation.herokuapp.com/properties/user/{userid}/property
+```
+#post to  https://ww-foundation.herokuapp.com/properties/user/{userid}/property
 
 expects a full object
-example
-```
+
+
 {
 
     "name": "",
