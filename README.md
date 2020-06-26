@@ -33,7 +33,7 @@ axios.post('https://ww-foundation.herokuapp.com/createnewuser/login',
 # ALL PROPERTY ENDPOINTS
 
 
-#.post
+#post
 ```
 https://ww-foundation.herokuapp.com/properties/user/{userid}/property
 expects a full object
@@ -49,7 +49,7 @@ expects a full object
 }
 ```
 
-#.UPDATE
+#UPDATE
 ```
 https://ww-foundation.herokuapp.com/properties/property/{propid}
 expects any existing property
@@ -58,7 +58,7 @@ expects any existing property
 
 ```
 
-#.DELETE
+#DELETE
 ``` do i need to explain
 https://ww-foundation.herokuapp.com/properties/property/{id}
 ```
