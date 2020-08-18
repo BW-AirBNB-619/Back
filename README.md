@@ -1,4 +1,4 @@
-# how to login with oauth2 for my boy troy
+# how to login with oauth2
 Authenticating with OAUTH2 is similar to JWT as both return a token upon success. The main difference is the header and url path.
 
 Existing users admin/password, cinnamon/1234567
